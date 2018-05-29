@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Plomeria",
+            "image": "~/assets/img/plomeria.png",
+            "classname": "plomeria"
+        },
+        {
+            "id": "2",
+            "name": "Gimnasio",
+            "image": "~/assets/img/gimnasios.jpg",
+            "classname": "gimnasios"
+        },
+        {
+            "id": "3",
+            "name": "Computación",
+            "image": "~/assets/img/computacion.jpg",
+            "classname": "computacion"
+        },
+        {
+            "id": "4",
+            "name": "Pintura",
+            "image": "~/assets/img/pintura.jpg",
+            "classname": "pintura"
+        },
+        {
+            "id": "5",
+            "name": "Limpieza",
+            "image": "~/assets/img/limpieza.jpg",
+            "classname": "limpieza"
+        }
+    ]
+
+}

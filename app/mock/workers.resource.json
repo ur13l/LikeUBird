@@ -1,0 +1,177 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Mtro. Torres",
+            "km": "3100",
+            "rating": 9.0,
+            "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
+            "image": "https://domicilioplomeros.com/wp-content/uploads/2015/11/plomero-domicilio-bogota-colombia-1.png",
+            "type": "worker",
+            "latitude": 19.496274,
+            "longitude": -99.235363,
+            "icon": "~/assets/img/worker1.png",
+            "skills" : [
+                {
+                    "name": "Reparación de fugas",
+                    "price": 200,                    
+                    "icon": "~/assets/img/tap.png"
+                },
+                {
+                    "name": "Instalación Boiler",
+                    "price": 250,                    
+                    "icon": "~/assets/img/water-heater.png"
+                },
+                {
+                    "name": "Instalación Lavabo",
+                    "price": 300,                    
+                    "icon": "~/assets/img/sink.png"
+                },
+                {
+                    "name": "Mantenimiento Estufa",
+                    "price": 200,                    
+                    "icon": "~/assets/img/stove.png"
+                },
+                {
+                    "name": "Destape",
+                    "price": 200,                    
+                    "icon": "~/assets/img/desatascador.png"
+                }
+            ],
+            "photos": [
+                {
+                    "url": "~/assets/img/plomeria.png"
+                },
+                {
+                    "url": "~/assets/img/computacion.jpg"
+                },
+                {
+                    "url": "~/assets/img/gimnasios.jpg"
+                },
+                {
+                    "url": "~/assets/img/limpieza.png"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Jorge Torres",
+            "km": "300",
+            "rating": 8.0,
+            "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
+            "image": "https://fscomps.fotosearch.com/compc/CSP/CSP436/3d-s%C3%BAper-plomero-vuelo-con-caja-de-colecci%C3%B3n-de-ilustraciones__k33707897.jpg",
+            "type": "worker",
+            "latitude": 19.498074,
+            "longitude": -99.236363,
+            "icon": "~/assets/img/worker1.png",
+            "skills" : [
+                {
+                    "name": "Reparación de fugas",
+                    "price": 200,
+                    "icon": "~/assets/img/tap.png"
+                },
+                {
+                    "name": "Instalación Boiler",
+                    "price": 200,
+                    "icon": "~/assets/img/water-heater.png"
+                },
+                {
+                    "name": "Instalación Lavabo",
+                    "price": 200,
+                    "icon": "~/assets/img/sink.png"
+                },
+                {
+                    "name": "Mantenimiento Estufa",
+                    "price": 200,
+                    "icon": "~/assets/img/stove.png"
+                },
+                {
+                    "name": "Destape",
+                    "price": 200,
+                    "icon": "~/assets/img/desatascador.png"
+                }
+            ],
+            "photos": [
+                {
+                    "url": "~/assets/img/plomeria.png"
+                },
+                {
+                    "url": "~/assets/img/computacion.jpg"
+                },
+                {
+                    "url": "~/assets/img/gimnasios.jpg"
+                },
+                {
+                    "url": "~/assets/img/limpieza.png"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "ArreglaTodo",
+            "km": "2.3",
+            "rating": 8.0,
+            "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
+            "image": "https://cdn.homeadvisor.com/files/eid/61060000/61061251/5084578.gif?modifyDateTime=1487527938000",
+            "type": "shop",
+            "latitude": 19.507074,
+            "longitude": -99.238888,
+            "icon": "~/assets/img/user.png",
+            "skills" : []
+        },
+        {
+            "id": "4",
+            "name": "Laura Romero",
+            "km": "233",
+            "rating": 9.0,
+            "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
+            "image": "http://simplycleandenver.com/wp-content/uploads/2014/09/Cleaning-Lady-with-Bucket-and-Simply-Clean-Logo.png",
+            "type": "shop",
+            "latitude": 19.499074,
+            "longitude": -99.239888,
+            "icon": "~/assets/img/worker2.png",
+            "skills" : [
+                {
+                    "name": "Reparación de fugas",
+                    "price": 200,
+                    "icon": "~/assets/img/tap.png"
+                },
+                {
+                    "name": "Instalación Boiler",
+                    "price": 200,
+                    "icon": "~/assets/img/water-heater.png"
+                },
+                {
+                    "name": "Instalación Lavabo",
+                    "price": 200,
+                    "icon": "~/assets/img/sink.png"
+                },
+                {
+                    "name": "Mantenimiento Estufa",
+                    "price": 200,
+                    "icon": "~/assets/img/stove.png"
+                },
+                {
+                    "name": "Destape",
+                    "price": 200,
+                    "icon": "~/assets/img/desatascador.png"
+                }
+            ],
+            "photos": [
+                {
+                    "url": "~/assets/img/plomeria.png"
+                },
+                {
+                    "url": "~/assets/img/computacion.jpg"
+                },
+                {
+                    "url": "~/assets/img/gimnasios.jpg"
+                },
+                {
+                    "url": "~/assets/img/limpieza.png"
+                }
+            ]
+        }
+    ]
+
+}

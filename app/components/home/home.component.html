@@ -1,0 +1,10 @@
+
+<StackLayout height="100%">
+  <StackLayout class="secondary-bar" orientation="horizontal" verticalAlign="center" (tap)="marketPlace()">
+    <Image height="25" width="10%" src="~/assets/img/fast-delivery.png"></Image>
+    <Label class="white-text" verticalAlignment="center" text="Servicio Express"></Label>
+  </StackLayout>
+  <StackLayout *ngFor="let service of services" [class]="service.classname +  ' menu-item'" (tap)="serviceDetail(service)">
+    <Label class="medium-text white-text" [text]="service.name"></Label>
+  </StackLayout>
+</StackLayout>

@@ -1,0 +1,8 @@
+StackLayout(height="100%")
+    StackLayout.secondary-bar(orientation="horizontal", verticalAlign="center", (tap)="marketPlace()")
+        Image(height="25" width="10%" src="~/assets/img/fast-delivery.png")
+        Label.white-text(verticalAlignment="center", text="Servicio Express")
+        
+    StackLayout(*ngFor="let service of services",[class]="service.classname +  ' menu-item'", (tap)="serviceDetail(service)")
+            Label.medium-text.white-text([text]="service.name")
+    
