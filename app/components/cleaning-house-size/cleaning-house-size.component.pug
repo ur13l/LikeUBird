@@ -1,0 +1,11 @@
+ScrollView.page
+    StackLayout(orientation="vertical", height="100%")
+        StackLayout(orientation="horizontal", marginTop="30", marginBottom="30")
+            Image(src="~/assets/img/back.png", height="20", width="20%")
+            StackLayout(width="80%")
+                Label.regular.title(text="¿De qué tamaño es tu casa?")
+        Image(src="~/assets/img/house1.png", [height]="size", [width]="size")
+        Slider(minValue="30", maxValue="300", [(ngModel)]="size")
+        StackLayout(verticalAlignment="bottom", height="100%")
+            Button.bottom-button(text="Continuar", [nsRouterLink]="['/cleaning-info']")
+        

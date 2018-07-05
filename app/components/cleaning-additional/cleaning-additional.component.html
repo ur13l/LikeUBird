@@ -1,0 +1,24 @@
+
+<ScrollView class="page">
+  <StackLayout orientation="vertical" height="100%">
+    <StackLayout orientation="horizontal" marginTop="30" marginBottom="30">
+      <Image src="~/assets/img/back.png" height="20" width="20%"></Image>
+      <StackLayout width="80%">
+        <Label class="regular title" text="¿Requieres algún servicio adicional?"></Label>
+      </StackLayout>
+    </StackLayout>
+    <GridLayout height="70%" columns="*,*" rows="auto,auto,auto">
+      <StackLayout class="background-white item" *ngFor="let job of jobs; index as i" padding="5" margin="5" [class.selected]="job.selected" (tap)="select(job)" verticalAlignment="center" horizontalAlignment="center" [row]="i/2" [col]="i%2" height="120" orientation="vertical">
+        <StackLayout width="100%" verticalAlignment="center">
+          <Image [src]="job.image" stretch="aspectFill" height="60" width="60"></Image>
+        </StackLayout>
+        <StackLayout orientation="vertical" marginLeft="4%" verticalAlignment="center" marginTop="10" horizontalAlignment="center">
+          <Label class="light" [text]="job.name"></Label>
+        </StackLayout>
+      </StackLayout>
+    </GridLayout>
+    <StackLayout verticalAlignment="bottom" height="100%">
+      <Button class="bottom-button" text="Continuar" [nsRouterLink]="['/cleaning-house-size']"></Button>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>

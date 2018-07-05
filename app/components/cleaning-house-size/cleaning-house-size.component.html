@@ -1,0 +1,16 @@
+
+<ScrollView class="page">
+  <StackLayout orientation="vertical" height="100%">
+    <StackLayout orientation="horizontal" marginTop="30" marginBottom="30">
+      <Image src="~/assets/img/back.png" height="20" width="20%"></Image>
+      <StackLayout width="80%">
+        <Label class="regular title" text="¿De qué tamaño es tu casa?"></Label>
+      </StackLayout>
+    </StackLayout>
+    <Image src="~/assets/img/house1.png" [height]="size" [width]="size"></Image>
+    <Slider minValue="30" maxValue="300" [(ngModel)]="size"></Slider>
+    <StackLayout verticalAlignment="bottom" height="100%">
+      <Button class="bottom-button" text="Continuar" [nsRouterLink]="['/cleaning-info']"></Button>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>

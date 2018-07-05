@@ -1,7 +1,7 @@
 
 <StackLayout class="background-blue item" orientation="horizontal" *ngIf="filter == worker.type || !filter" (tap)="selectWorker()">
   <StackLayout width="20%" verticalAlignment="center">
-    <Image class="img-rounded" [src]="worker.image" stretch="aspectFill" height="80" width="80"></Image>
+    <Image class="img-rounded" [src]="worker.image" margin="5" stretch="aspectFill" height="50" width="50"></Image>
   </StackLayout>
   <StackLayout orientation="vertical" width="50%" marginLeft="4%" verticalAlignment="center">
     <Label [text]="worker.name"></Label>
@@ -11,7 +11,7 @@
     <StackLayout class="dark-background" verticalAlignment="center" horizontalAlign="left" orientation="vertical" margin="20" width="30%">
       <Image *ngIf="worker.type == 'worker'" height="20" width="50" src="~/assets/img/profile.png"></Image>
       <Image *ngIf="worker.type == 'shop'" height="20" width="50" src="~/assets/img/shop.png"></Image>
-      <StackLayout orientation="horizontal" marginTop="20">
+      <StackLayout orientation="horizontal" marginTop="10" verticalAlignment="center">
         <Image height="20" src="~/assets/img/star.png"></Image>
         <Label [text]="worker.rating" marginLeft="3"></Label>
       </StackLayout>

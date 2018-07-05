@@ -1,0 +1,12 @@
+.cleaning-selection {
+
+}
+
+.item {
+    border-color: #efefef;
+    border-width: 1;
+}
+
+.selected {
+    background: #dedede;
+}

@@ -152,7 +152,8 @@ refer to http://docs.nativescript.org/ui/theme.
 }
 
 .third-bar {
-    background: #282F39;
+    background: #9F54C9;
+    ;
     height:10%;
 }
 
@@ -200,16 +201,15 @@ refer to http://docs.nativescript.org/ui/theme.
     border-color: gray;
     border-width: 0.5;
     object-fit: cover;
-    width: auto;
-    height: auto;
 }
 
 .background-blue {
-    background-color: #282F39;
+    background-color:white;
+    color: black;
 }
 
 .selected {
-    background-color: #080f19
+    background-color: #7F34A9
 }
 
 
@@ -225,9 +225,9 @@ refer to http://docs.nativescript.org/ui/theme.
 
 .bottom-button {
     background-color:rgba(0,0,0,0);
-    color:white;
+    color:#9F54C9;
     width:100%;
-    border-color: #70efe6;
+    border-color: #9F54C9;
     border-width: 2;
 }
 
@@ -266,4 +266,41 @@ refer to http://docs.nativescript.org/ui/theme.
     margin-top: 10;
     margin-left: 10;
     margin-right: 10;
+}
+
+.purple-background {
+    background: #9F54C9;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.title {
+    font-size: 20;
+}
+
+.subtitle {
+    font-size: 16;
+}
+
+.rating-circle {
+    border-color: white;
+    border-radius: 100%;
+    border-width: 1;
+    padding: 5;
+    margin: 5;
+    font-weight: 100;
+    color:white;
+    font-size: 12;
+    text-align: center;
+    width: 30;
 }

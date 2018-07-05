@@ -24,6 +24,10 @@ import { MarketPlaceComponent } from "~/components/market-place/market-place.com
 import { PaymentMethodsComponent } from "~/components/payment-methods/payment-methods.component";
 import { AddPaymentMethodComponent } from "~/components/add-payment-method/add-payment-method.component";
 import { RatingComponent } from "~/components/rating/rating.component";
+import { CleaningSelectionComponent } from "~/components/cleaning-selection/cleaning-selection.component";
+import { CleaningInfoComponent } from "~/components/cleaning-info/cleaning-info.component";
+import { CleaningAdditionalComponent } from "~/components/cleaning-additional/cleaning-additional.component";
+import { CleaningHouseSizeComponent } from "~/components/cleaning-house-size/cleaning-house-size.component";
 
 export const routes: Routes = [
     { path: "", component:AppComponent, children: [
@@ -35,6 +39,10 @@ export const routes: Routes = [
         {path:"rating", pathMatch:'full', component:RatingComponent, canActivate:[AuthGuard]},
         {path:"order-tracking", pathMatch:'full', component:OrderTrackingComponent, canActivate:[AuthGuard]},
         {path:"market-place", pathMatch:'full', component:MarketPlaceComponent, canActivate:[AuthGuard]},
+        {path:"cleaning-selection", pathMatch:'full', component:CleaningSelectionComponent, canActivate:[AuthGuard]},
+        {path:"cleaning-info", pathMatch:'full', component:CleaningInfoComponent, canActivate:[AuthGuard]},
+        {path:"cleaning-additional", pathMatch:'full', component:CleaningAdditionalComponent, canActivate:[AuthGuard]},
+        {path:"cleaning-house-size", pathMatch:'full', component:CleaningHouseSizeComponent, canActivate:[AuthGuard]},
         
         {
             path:"", component:DrawerComponent, children:[

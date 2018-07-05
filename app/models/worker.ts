@@ -12,6 +12,7 @@ export class Worker {
         this.latitude = obj.latitude;
         this.longitude = obj.longitude;
         this.icon = obj.icon;
+        this.category = obj.category;
 
         
         this.skills = [];
@@ -30,4 +31,5 @@ export class Worker {
     public latitude : number;
     public longitude : number;
     public icon : string;
+    public category : string;
 }

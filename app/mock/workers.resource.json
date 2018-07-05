@@ -5,6 +5,7 @@
             "name": "Mtro. Torres",
             "km": "3100",
             "rating": 9.0,
+            "category": "plumber",
             "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
             "image": "https://domicilioplomeros.com/wp-content/uploads/2015/11/plomero-domicilio-bogota-colombia-1.png",
             "type": "worker",
@@ -57,6 +58,7 @@
             "id": "2",
             "name": "Jorge Torres",
             "km": "300",
+            "category": "plumber",
             "rating": 8.0,
             "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
             "image": "https://fscomps.fotosearch.com/compc/CSP/CSP436/3d-s%C3%BAper-plomero-vuelo-con-caja-de-colecci%C3%B3n-de-ilustraciones__k33707897.jpg",
@@ -109,6 +111,7 @@
         {
             "id": "3",
             "name": "ArreglaTodo",
+            "category": "plumber",            
             "km": "2.3",
             "rating": 8.0,
             "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
@@ -122,6 +125,7 @@
         {
             "id": "4",
             "name": "Laura Romero",
+            "category": "cleaning",
             "km": "233",
             "rating": 9.0,
             "description": "Más de diez años me respaldan, me gusta realizar todo con extrema higiene y cuidado.",
@@ -132,27 +136,27 @@
             "icon": "~/assets/img/worker2.png",
             "skills" : [
                 {
-                    "name": "Reparación de fugas",
+                    "name": "Limpieza de oficina",
                     "price": 200,
                     "icon": "~/assets/img/tap.png"
                 },
                 {
-                    "name": "Instalación Boiler",
+                    "name": "Limpieza de casa",
                     "price": 200,
                     "icon": "~/assets/img/water-heater.png"
                 },
                 {
-                    "name": "Instalación Lavabo",
+                    "name": "Limpieza industrial",
                     "price": 200,
                     "icon": "~/assets/img/sink.png"
                 },
                 {
-                    "name": "Mantenimiento Estufa",
+                    "name": "7 días de la semana",
                     "price": 200,
                     "icon": "~/assets/img/stove.png"
                 },
                 {
-                    "name": "Destape",
+                    "name": "Servicio recurrente",
                     "price": 200,
                     "icon": "~/assets/img/desatascador.png"
                 }

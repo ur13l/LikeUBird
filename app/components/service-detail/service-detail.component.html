@@ -11,7 +11,7 @@
       <Image height="30%" (tap)="setFilter('shop')" src="~/assets/img/shop.png"></Image>
     </StackLayout>
   </StackLayout>
-  <StackLayout>
+  <StackLayout class="purple-background">
     <WorkerItem *ngFor="let worker of workers" [worker]="worker" [filter]="filter"></WorkerItem>
   </StackLayout>
   <StackLayout class="background-blue" height="100%">  </StackLayout>

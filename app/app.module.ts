@@ -40,6 +40,11 @@ import { AddPaymentMethodComponent } from "~/components/add-payment-method/add-p
 import * as platform from "platform";
 import { MapService } from "~/services/map.service";
 import { RatingComponent } from "~/components/rating/rating.component";
+import { CleaningSelectionComponent } from "~/components/cleaning-selection/cleaning-selection.component";
+import { CleaningInfoComponent } from "~/components/cleaning-info/cleaning-info.component";
+import { CleaningAdditionalComponent } from "~/components/cleaning-additional/cleaning-additional.component";
+import { CleaningHouseSizeComponent } from "~/components/cleaning-house-size/cleaning-house-size.component";
+
 declare var GMSServices: any;
 
 if (platform.isIOS) { 
@@ -87,7 +92,11 @@ if (platform.isIOS) {
         MarketPlaceComponent,
         PaymentMethodsComponent,
         AddPaymentMethodComponent,
-        RatingComponent
+        RatingComponent,
+        CleaningSelectionComponent,
+        CleaningInfoComponent,
+        CleaningAdditionalComponent,
+        CleaningHouseSizeComponent
     ],
     providers: [
         AuthService,
