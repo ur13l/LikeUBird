@@ -1,3 +1,9 @@
 .cleaning-info {
 
 }
+
+.item-list {
+    border-color: #dedede;
+    border-width: 0;
+    padding:10
+}

@@ -43,5 +43,7 @@ export class ServiceDetailComponent implements OnInit {
 	setFilter(text : string) {
 		this.filter = text;
 	}
+
+	
 	
 }

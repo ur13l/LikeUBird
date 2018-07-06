@@ -3,13 +3,13 @@ StackLayout.page
         StackLayout(width="30%", verticalAlignment="center")
             Image.img-rounded([src]="order.worker.image", stretch="aspectFill", height="60", width="60")
         StackLayout(orientation="vertical", width="30%", marginLeft="4%", verticalAlignment="center")
-            Label([text]="order.worker.name")
+            Label.bold([text]="order.worker.name")
         StackLayout(orientation="vertical", width="40%", marginLeft="4%", verticalAlignment="center")            
             Label(text="¿Cómo estás?", marginRight="20")
     StackLayout.line    
     StackLayout.background-blue(horizontalAlignment="right", width="100%", padding="10", orientation="horizontal")
         Image.img-rounded(src="~/assets/img/filled-circle.png", height="20", width="20", marginRight="10")    
-        Label.white-text(text="Hoy")
+        Label(text="Hoy")
     StackLayout.line
     StackLayout.background-blue(orientation="horizontal", padding="10")
         GridLayout(columns="*,*,*", rows="auto,auto,auto", padding="10")

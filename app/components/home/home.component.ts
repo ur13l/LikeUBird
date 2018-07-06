@@ -53,7 +53,14 @@ export class HomeComponent implements OnInit {
 	serviceDetail(service : Service) {
 		this.serviceService.selectService(service)
 			.then(
-				response => this._router.navigate(['/service-detail'], { clearHistory: false })
+				response => {
+					if(service.name != "Limpieza") {
+						this._router.navigate(['/plumber-selection'], { clearHistory: false })
+					}
+					else {
+						this._router.navigate(['/cleaning-selection'], { clearHistory: false })						
+					}
+				}
 			)
 	}
 

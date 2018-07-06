@@ -106,18 +106,34 @@ refer to http://docs.nativescript.org/ui/theme.
     padding: 10;
 }
 
+.label-text {
+    color:white;
+}
+
+.text-mask {
+    height:100%;
+    background: rgba(0,0,0,0.25);
+}
 
 .plomeria {  
-    background-image: 'url("~/assets/img/plomeria.png")';
+    background-image: 'url("~/assets/img/plomeria.jpg")';
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.electricista {
+    background-image: url('~/assets/img/electricista.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.computacion {
-    background-image: url('~/assets/img/computacion.jpg');
+.cerrajeria {
+    background-image: url('~/assets/img/cerrajeria.jpg');
     background-size: cover;
     background-position: center;
 }
+
 
 .pintura {
     background-image: url('~/assets/img/pintura.jpg');
@@ -159,8 +175,7 @@ refer to http://docs.nativescript.org/ui/theme.
 
 .menu-item {
     margin-top: 1%;
-    vertical-align: middle;
-    align-items: center;
+    vertical-align: bottom;
     height:18%;
     background-size: cover;
     background-position: center;
@@ -214,12 +229,12 @@ refer to http://docs.nativescript.org/ui/theme.
 
 
 .item {
-    margin-top: 1;
-    height: 100;
+    margin-top: 0;
+    height: 90;
 }
 
 .secondary-text {
-    color: #70efe6;
+    color: #9F54C9;
     font-size: 14
 }
 
@@ -231,12 +246,16 @@ refer to http://docs.nativescript.org/ui/theme.
     border-width: 2;
 }
 
+
 .dropdown-style {
-    padding: 15;
+    padding: 0;
 }
 
 .dropdown-style::option {
-    background-color: #080f19;
+    background-color: white;
+    color: #9F54C9;
+    font-weight: 100;
+    padding: 10;
   }
 
 .bold {
@@ -244,7 +263,7 @@ refer to http://docs.nativescript.org/ui/theme.
 }
 
 .line {
-    background: white;
+    background: #9F54C9;
     height: 1;
 }
 
@@ -303,4 +322,16 @@ refer to http://docs.nativescript.org/ui/theme.
     font-size: 12;
     text-align: center;
     width: 30;
+}
+
+.purple-text {
+    color: #9F54C9;
+}
+
+.grey-background {
+    background: #efefef;
+}
+
+.white-background {
+    background:white;
 }

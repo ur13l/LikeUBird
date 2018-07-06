@@ -50,13 +50,8 @@ export class WorkerDetailComponent implements OnInit {
 		this.ordersService.makeOrder(order)
 			.subscribe(
 				order => {
-					console.log(this.worker.category);
-					if(this.worker.category=="cleaning") {
-						this._router.navigate(['/cleaning-selection'])
-					}
-					else {
-						this._router.navigate(['/confirm-order'])
-					}
+					this._router.navigate(['/confirm-order'])
+					
 				}
 				
 			)

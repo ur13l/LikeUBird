@@ -3,20 +3,20 @@
         {
             "id": "1",
             "name": "Plomeria",
-            "image": "~/assets/img/plomeria.png",
+            "image": "~/assets/img/plomeria.jpg",
             "classname": "plomeria"
         },
         {
             "id": "2",
-            "name": "Gimnasio",
+            "name": "Electricista",
             "image": "~/assets/img/gimnasios.jpg",
-            "classname": "gimnasios"
+            "classname": "electricista"
         },
         {
             "id": "3",
-            "name": "Computación",
-            "image": "~/assets/img/computacion.jpg",
-            "classname": "computacion"
+            "name": "Cerrajería",
+            "image": "~/assets/img/cerrajeria.jpg",
+            "classname": "cerrajeria"
         },
         {
             "id": "4",

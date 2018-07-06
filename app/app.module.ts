@@ -44,6 +44,12 @@ import { CleaningSelectionComponent } from "~/components/cleaning-selection/clea
 import { CleaningInfoComponent } from "~/components/cleaning-info/cleaning-info.component";
 import { CleaningAdditionalComponent } from "~/components/cleaning-additional/cleaning-additional.component";
 import { CleaningHouseSizeComponent } from "~/components/cleaning-house-size/cleaning-house-size.component";
+import { ThanksComponent } from "~/components/thanks/thanks.component";
+import { PlumberSelectionComponent } from "~/components/plumber-selection/plumber-selection.component";
+import { FareComponent } from "~/components/fare/fare.component";
+import { PlumbingCalendarComponent } from "~/components/plumbing-calendar/plumbing-calendar.component";
+import { NativeScriptUICalendarModule } from "nativescript-ui-calendar/angular";
+
 
 declare var GMSServices: any;
 
@@ -68,7 +74,8 @@ if (platform.isIOS) {
         NativeScriptRouterModule.forRoot(routes),
         DropDownModule,
         CustomFormsModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        NativeScriptUICalendarModule
     ],
     declarations: [
         AppComponent,
@@ -96,7 +103,11 @@ if (platform.isIOS) {
         CleaningSelectionComponent,
         CleaningInfoComponent,
         CleaningAdditionalComponent,
-        CleaningHouseSizeComponent
+        CleaningHouseSizeComponent,
+        ThanksComponent,
+        PlumberSelectionComponent,
+        FareComponent,
+        PlumbingCalendarComponent
     ],
     providers: [
         AuthService,

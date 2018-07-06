@@ -7,5 +7,5 @@ ScrollView.page
         Image(src="~/assets/img/house1.png", [height]="size", [width]="size")
         Slider(minValue="30", maxValue="300", [(ngModel)]="size")
         StackLayout(verticalAlignment="bottom", height="100%")
-            Button.bottom-button(text="Continuar", [nsRouterLink]="['/cleaning-info']")
+            Button.bottom-button(text="Continuar", (tap)="serviceDetail()")
         

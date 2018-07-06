@@ -3,7 +3,7 @@ StackLayout.background-blue.item(orientation="horizontal", *ngIf="filter == work
         Image.img-rounded([src]="worker.image", margin="5", stretch="aspectFill", height="50", width="50")
     StackLayout(orientation="vertical", width="50%", marginLeft="4%", verticalAlignment="center")
         Label([text]="worker.name")
-        Label(text="{{worker.km}} km")
+        Label.light(text="{{worker.km}} km")
     StackLayout
         StackLayout.dark-background(verticalAlignment="center", horizontalAlign="left" orientation="vertical", margin="20", width="30%")
             Image(*ngIf="worker.type == 'worker'", height="20", width="50", src="~/assets/img/profile.png")

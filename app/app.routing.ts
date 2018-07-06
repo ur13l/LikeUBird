@@ -28,6 +28,10 @@ import { CleaningSelectionComponent } from "~/components/cleaning-selection/clea
 import { CleaningInfoComponent } from "~/components/cleaning-info/cleaning-info.component";
 import { CleaningAdditionalComponent } from "~/components/cleaning-additional/cleaning-additional.component";
 import { CleaningHouseSizeComponent } from "~/components/cleaning-house-size/cleaning-house-size.component";
+import { ThanksComponent } from "~/components/thanks/thanks.component";
+import { PlumberSelectionComponent } from "~/components/plumber-selection/plumber-selection.component";
+import { FareComponent } from "~/components/fare/fare.component";
+import { PlumbingCalendarComponent } from "~/components/plumbing-calendar/plumbing-calendar.component";
 
 export const routes: Routes = [
     { path: "", component:AppComponent, children: [
@@ -43,6 +47,10 @@ export const routes: Routes = [
         {path:"cleaning-info", pathMatch:'full', component:CleaningInfoComponent, canActivate:[AuthGuard]},
         {path:"cleaning-additional", pathMatch:'full', component:CleaningAdditionalComponent, canActivate:[AuthGuard]},
         {path:"cleaning-house-size", pathMatch:'full', component:CleaningHouseSizeComponent, canActivate:[AuthGuard]},
+        {path:"thanks", pathMatch:'full', component:ThanksComponent, canActivate:[AuthGuard]},
+        {path:"plumber-selection", pathMatch:'full', component:PlumberSelectionComponent, canActivate:[AuthGuard]},
+        {path:"fare", pathMatch:'full', component:FareComponent, canActivate:[AuthGuard]},
+        {path:"plumbing-calendar", pathMatch:'full', component:PlumbingCalendarComponent, canActivate:[AuthGuard]},
         
         {
             path:"", component:DrawerComponent, children:[

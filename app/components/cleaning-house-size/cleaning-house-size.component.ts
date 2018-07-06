@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page/page';
 import { RouterExtensions } from 'nativescript-angular/router';
 import { AuthService } from '~/services/auth.service';
+import { Service } from '~/models/service';
+import { ServiceService } from '~/services/service.service';
 
 @Component({
 	moduleId: module.id,
@@ -16,7 +18,8 @@ export class CleaningHouseSizeComponent implements OnInit {
 	constructor(
 		private _page : Page,
 		private _router : RouterExtensions,
-		private authService : AuthService
+		private authService : AuthService,
+		private serviceService : ServiceService
 
 	) { 
 		this._page.actionBarHidden = true;
@@ -24,5 +27,21 @@ export class CleaningHouseSizeComponent implements OnInit {
 
 	ngOnInit() {
 		
+	}
+
+	serviceDetail() {
+		let service = new Service({
+            "id": "5",
+            "name": "Limpieza",
+            "image": "~/assets/img/limpieza.jpg",
+            "classname": "limpieza"
+        });
+
+		this.serviceService.selectService(service)
+			.then(
+				response => {
+						this._router.navigate(['/service-detail'], { clearHistory: false })
+				}
+			)
 	}
 }

@@ -10,7 +10,7 @@
     <Image src="~/assets/img/house1.png" [height]="size" [width]="size"></Image>
     <Slider minValue="30" maxValue="300" [(ngModel)]="size"></Slider>
     <StackLayout verticalAlignment="bottom" height="100%">
-      <Button class="bottom-button" text="Continuar" [nsRouterLink]="['/cleaning-info']"></Button>
+      <Button class="bottom-button" text="Continuar" (tap)="serviceDetail()"></Button>
     </StackLayout>
   </StackLayout>
 </ScrollView>

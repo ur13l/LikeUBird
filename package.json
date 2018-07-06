@@ -36,6 +36,7 @@
     "nativescript-star-ratings": "^1.0.0",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-toast": "^1.4.6",
+    "nativescript-ui-calendar": "^3.6.1",
     "nativescript-ui-sidedrawer": "^4.0.0",
     "ng4-validators": "^5.1.0",
     "pug-cli": "^1.0.0-alpha6",
