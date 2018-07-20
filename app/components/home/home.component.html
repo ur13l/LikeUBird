@@ -1,8 +1,14 @@
 
 <StackLayout height="100%">
-  <StackLayout class="secondary-bar" orientation="horizontal" verticalAlign="center" (tap)="marketPlace()">
-    <Image height="25" width="10%" src="~/assets/img/fast-delivery2.png"></Image>
-    <Label class="white-text" verticalAlignment="center" text="Servicio Express"></Label>
+  <StackLayout class="secondary-bar" orientation="horizontal" verticalAlign="center">
+    <StackLayout orientation="horizontal" width="50%" (tap)="marketPlace(1)">
+      <Image height="25" width="10%" src="~/assets/img/fast-delivery2.png" marginLeft="10"></Image>
+      <Label class="white-text" verticalAlignment="center" text="Servicio Express" marginLeft="10"></Label>
+    </StackLayout>
+    <StackLayout orientation="horizontal" horizontalAlignment="right" width="50%" (tap)="marketPlace(2)">
+      <Label class="white-text" verticalAlignment="center" text="Clasificados" marginRight="10"></Label>
+      <Image height="25" width="10%" src="~/assets/img/newspaper.png" marginRight="10"></Image>
+    </StackLayout>
   </StackLayout>
   <StackLayout *ngFor="let service of services" [class]="service.classname +  ' menu-item'" (tap)="serviceDetail(service)">
     <StackLayout class="text-mask" verticalAlignment="middle" horizontalAlignment="right" width="100%">

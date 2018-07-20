@@ -291,6 +291,10 @@ refer to http://docs.nativescript.org/ui/theme.
     background: #9F54C9;
 }
 
+.purplebackground {
+    background: #9F54C9;
+}
+
 .light {
     font-weight: 100;
 }

@@ -49,6 +49,9 @@ import { PlumberSelectionComponent } from "~/components/plumber-selection/plumbe
 import { FareComponent } from "~/components/fare/fare.component";
 import { PlumbingCalendarComponent } from "~/components/plumbing-calendar/plumbing-calendar.component";
 import { NativeScriptUICalendarModule } from "nativescript-ui-calendar/angular";
+import { LocksmithSelectionComponent } from "~/components/locksmith-selection/locksmith-selection.component";
+import { FareLocksmithComponent } from "~/components/fare-locksmith/fare-locksmith.component";
+import { SetPaymentComponent } from "~/components/set-payment/set-payment.component";
 
 
 declare var GMSServices: any;
@@ -107,7 +110,10 @@ if (platform.isIOS) {
         ThanksComponent,
         PlumberSelectionComponent,
         FareComponent,
-        PlumbingCalendarComponent
+        PlumbingCalendarComponent,
+        LocksmithSelectionComponent,
+        FareLocksmithComponent,
+        SetPaymentComponent
     ],
     providers: [
         AuthService,

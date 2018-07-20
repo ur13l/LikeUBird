@@ -4,13 +4,57 @@
     <StackLayout orientation="horizontal" marginTop="30" marginBottom="30">
       <Image src="~/assets/img/back.png" height="20" width="20%"></Image>
       <StackLayout width="80%">
-        <Label class="regular title" text="Elige la fecha en tu calendario"></Label>
+        <Label class="regular title" text="Elige la fecha en tu calendario">           </Label>
       </StackLayout>
     </StackLayout>
     <StackLayout orientation="vertical" height="100%">
       <RadCalendar id="calendar" height="70%"></RadCalendar>
-      <StackLayout verticalAlignment="bottom" height="100%">
-        <Button class="bottom-button" text="Continuar" (tap)="serviceDetail()"></Button>
+      <StackLayout orientation="vertical" height="20%" paddingTop="20">
+        <StackLayout orientation="horizontal" width="100%">
+          <!--Lista de historial-->
+          <StackLayout orientation="vertical" width="50%">
+            <Label class="title" text="Resumen del mes">               </Label>
+            <StackLayout orientation="horizontal" padding="10">
+              <Image src="~/assets/img/green.png" height="20" width="20" verticalAlignment="center"></Image>
+              <StackLayout orientation="vertical" paddingLeft="10">
+                <Label text="Reparación lavabo"></Label>
+                <Label class="grey-text" text="11/07/2018"></Label>
+              </StackLayout>
+            </StackLayout>
+            <StackLayout orientation="horizontal" padding="10">
+              <Image src="~/assets/img/green.png" height="20" width="20" verticalAlignment="center"></Image>
+              <StackLayout orientation="vertical" paddingLeft="10">
+                <Label text="Reparación lavabo"></Label>
+              </StackLayout>
+            </StackLayout>
+          </StackLayout>
+          <!--Botones de citas-->
+          <StackLayout orientation="vertical" width="50%">
+            <StackLayout orientation="horizontal" width="100%" height="50%">
+              <StackLayout class="item" orientation="vertical" width="50%" padding="10" margin="5">
+                <Image src="~/assets/img/red.png" height="20" horizontalAlignment="center"></Image>
+                <Label text="Urgente" horizontalAlignment="center"></Label>
+              </StackLayout>
+              <StackLayout class="item" orientation="vertical" width="50%" padding="10" margin="5">
+                <Image src="~/assets/img/blue.png" height="20" horizontalAlignment="center"></Image>
+                <Label text="Abierto" horizontalAlignment="center"></Label>
+              </StackLayout>
+            </StackLayout>
+            <StackLayout orientation="horizontal" width="100%" height="50%">
+              <StackLayout class="item" orientation="vertical" width="50%" padding="10" margin="5">
+                <Image src="~/assets/img/yellow.png" height="20" horizontalAlignment="center"></Image>
+                <Label text="Cancelado" horizontalAlignment="center"></Label>
+              </StackLayout>
+              <StackLayout class="item" orientation="vertical" width="50%" padding="10" margin="5">
+                <Image src="~/assets/img/green.png" height="20" horizontalAlignment="center"></Image>
+                <Label text="Agendado" horizontalAlignment="center"></Label>
+              </StackLayout>
+            </StackLayout>
+          </StackLayout>
+        </StackLayout>
+      </StackLayout>
+      <StackLayout verticalAlignment="bottom" height="10%">
+        <Button class="bottom-button" text="Continuar" [nsRouterLink]="['/set-payment']"></Button>
       </StackLayout>
     </StackLayout>
   </StackLayout>

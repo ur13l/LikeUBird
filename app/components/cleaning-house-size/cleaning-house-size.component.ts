@@ -34,13 +34,14 @@ export class CleaningHouseSizeComponent implements OnInit {
             "id": "5",
             "name": "Limpieza",
             "image": "~/assets/img/limpieza.jpg",
-            "classname": "limpieza"
+			"classname": "limpieza",
+			"category": "cleaning"
         });
 
 		this.serviceService.selectService(service)
 			.then(
 				response => {
-						this._router.navigate(['/service-detail'], { clearHistory: false })
+						this._router.navigate(['/service-detail'])
 				}
 			)
 	}

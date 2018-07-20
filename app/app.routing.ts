@@ -31,7 +31,10 @@ import { CleaningHouseSizeComponent } from "~/components/cleaning-house-size/cle
 import { ThanksComponent } from "~/components/thanks/thanks.component";
 import { PlumberSelectionComponent } from "~/components/plumber-selection/plumber-selection.component";
 import { FareComponent } from "~/components/fare/fare.component";
+import { FareLocksmithComponent } from "~/components/fare-locksmith/fare-locksmith.component";
 import { PlumbingCalendarComponent } from "~/components/plumbing-calendar/plumbing-calendar.component";
+import { LocksmithSelectionComponent } from "~/components/locksmith-selection/locksmith-selection.component";
+import { SetPaymentComponent } from "~/components/set-payment/set-payment.component";
 
 export const routes: Routes = [
     { path: "", component:AppComponent, children: [
@@ -42,7 +45,7 @@ export const routes: Routes = [
         {path:"confirm-order", pathMatch:'full', component:ConfirmOrderComponent, canActivate:[AuthGuard]},
         {path:"rating", pathMatch:'full', component:RatingComponent, canActivate:[AuthGuard]},
         {path:"order-tracking", pathMatch:'full', component:OrderTrackingComponent, canActivate:[AuthGuard]},
-        {path:"market-place", pathMatch:'full', component:MarketPlaceComponent, canActivate:[AuthGuard]},
+        {path:"market-place/:n", pathMatch:'full', component:MarketPlaceComponent, canActivate:[AuthGuard]},
         {path:"cleaning-selection", pathMatch:'full', component:CleaningSelectionComponent, canActivate:[AuthGuard]},
         {path:"cleaning-info", pathMatch:'full', component:CleaningInfoComponent, canActivate:[AuthGuard]},
         {path:"cleaning-additional", pathMatch:'full', component:CleaningAdditionalComponent, canActivate:[AuthGuard]},
@@ -51,6 +54,9 @@ export const routes: Routes = [
         {path:"plumber-selection", pathMatch:'full', component:PlumberSelectionComponent, canActivate:[AuthGuard]},
         {path:"fare", pathMatch:'full', component:FareComponent, canActivate:[AuthGuard]},
         {path:"plumbing-calendar", pathMatch:'full', component:PlumbingCalendarComponent, canActivate:[AuthGuard]},
+        {path:"locksmith-selection", pathMatch:'full', component:LocksmithSelectionComponent, canActivate:[AuthGuard]},
+        {path:"fare-locksmith", pathMatch:'full', component:FareLocksmithComponent, canActivate:[AuthGuard]},
+        {path:"set-payment", pathMatch:'full', component:SetPaymentComponent, canActivate:[AuthGuard]},
         
         {
             path:"", component:DrawerComponent, children:[

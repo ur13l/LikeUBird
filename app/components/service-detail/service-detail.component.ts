@@ -25,10 +25,12 @@ export class ServiceDetailComponent implements OnInit {
 	) { 
 		this._page.actionBarHidden = true;
 		this.service = serviceService.getService();
+		console.log(this.service);
 		workersService.index()
 			.subscribe(
 				workers => {
-					this.workers = workers
+					this.workers = workers;
+					this.workers = this.workers.filter(w => w.category == this.service.category)
 				},
 				error => {
 				}

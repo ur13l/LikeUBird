@@ -1,5 +1,15 @@
-
+<!DOCTYPE html>
 <StackLayout class="background-blue" orientation="vertical">
+  <StackLayout class="secondary-bar" orientation="horizontal" verticalAlign="center" height="5%">
+    <StackLayout orientation="horizontal" width="50%" (tap)="marketPlace(1)">
+      <Image height="25" width="10%" src="~/assets/img/fast-delivery2.png" marginLeft="10"></Image>
+      <Label class="white-text" verticalAlignment="center" text="Servicio Express" marginLeft="10"></Label>
+    </StackLayout>
+    <StackLayout orientation="horizontal" horizontalAlignment="right" width="50%" (tap)="marketPlace(2)">
+      <Label class="white-text" verticalAlignment="center" text="Clasificados" marginRight="10"></Label>
+      <Image height="25" width="10%" src="~/assets/img/newspaper.png" marginRight="10"></Image>
+    </StackLayout>
+  </StackLayout>
   <StackLayout style="background:white" orientation="vertical" height="100%" *ngIf="messaging">
     <StackLayout class="background-blue" orientation="horizontal" width="100%" verticalAlignment="center" horizontalAlignment="center" height="10%">
       <StackLayout width="20%" verticalAlignment="center">
@@ -34,7 +44,7 @@
   </StackLayout>
   <AbsoluteLayout [height]="heightmap">
     <GridLayout columns="*" rows="*" height="100%" width="100%">
-      <MapView col="0" row="0" [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" mapAnimationsEnabled="true" (mapReady)="onMapReady($event)" (markerSelect)="onMarkerSelect($event)" (cameraChanged)="onCameraChanged($event)"></MapView>
+      <MapView #mapView col="0" row="0" [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" mapAnimationsEnabled="true" (mapReady)="onMapReady($event)" (markerSelect)="onMarkerSelect($event)" (cameraChanged)="onCameraChanged($event)"></MapView>
     </GridLayout>
     <StackLayout class="address-block" orientation="horizontal" width="90%">
       <StackLayout width="10%">
@@ -51,50 +61,50 @@
       </StackLayout>
     </StackLayout>
     <Image src="~/assets/img/marker.png" left="180" top="270" height="5%" *ngIf="addressChange"></Image>
-    <StackLayout top="450" height="24%" width="100%" horizontalAlignment="center" orientation="horizontal">
+    <StackLayout top="470" height="24%" width="100%" horizontalAlignment="center" orientation="horizontal" *ngIf="type == 2">
       <StackLayout class="white-background" margin="5" width="32%" orientation="vertical">
         <Image height="80" src="~/assets/img/emp1.png" horizontalAlignment="center"></Image>
         <Label class="light" text="Acela Consult" horizontalAlignment="center"></Label>
+        <Image height="20" src="~/assets/img/1.png" horizontalAlignment="center"></Image>
       </StackLayout>
       <StackLayout class="white-background" margin="5" width="32%" orientation="vertical">
         <Image height="80" src="~/assets/img/emp2.png" horizontalAlignment="center"></Image>
         <Label class="light" text="Antarctica" horizontalAlignment="center">    </Label>
+        <Image height="20" src="~/assets/img/2.png" horizontalAlignment="center"></Image>
       </StackLayout>
       <StackLayout class="white-background" margin="5" width="32%" orientation="vertical">
         <Image height="80" src="~/assets/img/emp3.png" horizontalAlignment="center"></Image>
         <Label class="light" text="Qualia" horizontalAlignment="center"></Label>
+        <Image height="20" src="~/assets/img/3.png" horizontalAlignment="center"></Image>
       </StackLayout>
     </StackLayout>
   </AbsoluteLayout>
-  <StackLayout height="15%" orientation="horizontal" padding="10" *ngIf="worker">
-    <StackLayout width="20%" verticalAlignment="center">
-      <Image class="img-rounded" [src]="worker.image" stretch="aspectFill" height="50" width="50"></Image>
-    </StackLayout>
-    <StackLayout width="40%" orientation="vertical">
-      <Label class="purple-text bold" [text]="worker.name"></Label>
-      <Label class="secondary-text" *ngFor="let skill of worker?.skills" [text]="skill.name"></Label>
-    </StackLayout>
-    <StackLayout width="20%" orientation="horizontal">
-      <Image src="~/assets/img/paper-plane.png" height="30" width="30" (tap)="startMessaging()"></Image>
-    </StackLayout>
-    <StackLayout width="20%" orientation="horizontal">       
-      <Image src="~/assets/img/tick.png" height="30" width="30" (tap)="makeOrder()"></Image>
-    </StackLayout>
-  </StackLayout>
-  <StackLayout height="10%" orientation="horizontal">
-    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(1)" verticalAlignment="center" horizontalAlignment="center" [class.purple-background]="serviceSelected != 1" [class.selected]="serviceSelected == 1">
+  <!--StackLayout(height="15%", orientation="horizontal", padding="10", *ngIf="worker")
+  StackLayout(width="20%", verticalAlignment="center")
+      Image.img-rounded([src]="worker.image", stretch="aspectFill", height="50", width="50")
+  StackLayout(width="40%", orientation="vertical")
+      Label.purple-text.bold([text]="worker.name")
+      Label.secondary-text(*ngFor="let skill of worker?.skills", [text]="skill.name")
+  StackLayout(width="20%", orientation="horizontal")
+      Image(src="~/assets/img/paper-plane.png", height="30", width="30", (tap)="startMessaging()")
+  StackLayout(width="20%", orientation="horizontal")        
+      Image(src="~/assets/img/tick.png", height="30", width="30", (tap)="makeOrder()")
+      
+  -->
+  <StackLayout height="15%" orientation="horizontal" *ngIf="type == 1">
+    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(1)" verticalAlignment="center" horizontalAlignment="center" [class.purplebackground]="serviceSelected != 1" [class.selected]="serviceSelected == 1">
       <Image height="20" src="~/assets/img/faucet.png"></Image>
     </StackLayout>
-    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(2)" verticalAlignment="center" horizontalAlignment="center" [class.purple-background]="serviceSelected != 2" [class.selected]="serviceSelected == 2">
+    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(2)" verticalAlignment="center" horizontalAlignment="center" [class.purplebackground]="serviceSelected != 2" [class.selected]="serviceSelected == 2">
       <Image height="20" src="~/assets/img/plug.png"></Image>
     </StackLayout>
-    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(3)" verticalAlignment="center" horizontalAlignment="center" [class.purple-background]="serviceSelected != 3" [class.selected]="serviceSelected == 3">
-      <Image height="20" src="~/assets/img/monitor.png"></Image>
+    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(3)" verticalAlignment="center" horizontalAlignment="center" [class.purplebackground]="serviceSelected != 3" [class.selected]="serviceSelected == 3">
+      <Image height="20" src="~/assets/img/key.png"></Image>
     </StackLayout>
-    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(4)" verticalAlignment="center" horizontalAlignment="center" [class.purple-background]="serviceSelected != 4" [class.selected]="serviceSelected == 4">
+    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(4)" verticalAlignment="center" horizontalAlignment="center" [class.purplebackground]="serviceSelected != 4" [class.selected]="serviceSelected == 4">
       <Image height="20" src="~/assets/img/paintbrush.png"></Image>
     </StackLayout>
-    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(5)" verticalAlignment="center" horizontalAlignment="center" [class.purple-background]="serviceSelected != 5" [class.selected]="serviceSelected == 5">
+    <StackLayout class="purple-background" width="20%" height="100%" (tap)="select(5)" verticalAlignment="center" horizontalAlignment="center" [class.purplebackground]="serviceSelected != 5" [class.selected]="serviceSelected == 5">
       <Image height="20" src="~/assets/img/spray.png"></Image>
     </StackLayout>
   </StackLayout>

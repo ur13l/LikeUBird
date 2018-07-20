@@ -1,7 +1,12 @@
 StackLayout(height="100%")
-    StackLayout.secondary-bar(orientation="horizontal", verticalAlign="center", (tap)="marketPlace()")
-        Image(height="25" width="10%" src="~/assets/img/fast-delivery2.png")
-        Label.white-text(verticalAlignment="center", text="Servicio Express")
+    StackLayout.secondary-bar(orientation="horizontal", verticalAlign="center")
+        StackLayout(orientation="horizontal", width="50%", (tap)="marketPlace(1)")
+            Image(height="25" width="10%" src="~/assets/img/fast-delivery2.png", marginLeft="10")
+            Label.white-text(verticalAlignment="center", text="Servicio Express", marginLeft="10")
+        StackLayout(orientation="horizontal", horizontalAlignment="right", width="50%", (tap)="marketPlace(2)")
+            Label.white-text(verticalAlignment="center", text="Clasificados", marginRight="10")
+            Image(height="25" width="10%" src="~/assets/img/newspaper.png", marginRight="10")
+
         
     StackLayout(*ngFor="let service of services",[class]="service.classname +  ' menu-item'", (tap)="serviceDetail(service)")
         StackLayout.text-mask(verticalAlignment="middle", horizontalAlignment="right", width="100%")

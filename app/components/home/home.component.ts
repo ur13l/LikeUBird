@@ -54,8 +54,11 @@ export class HomeComponent implements OnInit {
 		this.serviceService.selectService(service)
 			.then(
 				response => {
-					if(service.name != "Limpieza") {
+					if(service.name == "Plomeria") {
 						this._router.navigate(['/plumber-selection'], { clearHistory: false })
+					}
+					else if (service.name == "Cerrajería") {
+						this._router.navigate(['/locksmith-selection'])
 					}
 					else {
 						this._router.navigate(['/cleaning-selection'], { clearHistory: false })						
@@ -65,7 +68,7 @@ export class HomeComponent implements OnInit {
 	}
 
 
-	marketPlace() {
-		this._router.navigate(['/market-place']);
+	marketPlace(n : number) {
+		this._router.navigate(['/market-place/' + n]);
 	}
 }

@@ -4,9 +4,11 @@ export class Service {
         this.image = obj.image;
         this.service = obj.service;
         this.price = obj.price;
+        this.category = obj.category;
     }
     public name : string;
     public image : string;
     public service : string;
     public price : string;
+    public category : string;
 }

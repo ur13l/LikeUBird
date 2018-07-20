@@ -4,7 +4,8 @@
             "id": "1",
             "name": "Plomeria",
             "image": "~/assets/img/plomeria.jpg",
-            "classname": "plomeria"
+            "classname": "plomeria",
+            "category": "plumber"
         },
         {
             "id": "2",
@@ -16,7 +17,8 @@
             "id": "3",
             "name": "Cerrajería",
             "image": "~/assets/img/cerrajeria.jpg",
-            "classname": "cerrajeria"
+            "classname": "cerrajeria",
+            "category": "cerrajeria"
         },
         {
             "id": "4",
@@ -28,7 +30,8 @@
             "id": "5",
             "name": "Limpieza",
             "image": "~/assets/img/limpieza.jpg",
-            "classname": "limpieza"
+            "classname": "limpieza",
+            "category": "cleaning"
         }
     ]
 
