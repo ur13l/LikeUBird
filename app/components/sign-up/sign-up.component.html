@@ -28,7 +28,7 @@
         <Label class="h3 m-15 white-text" textWrap="true" width="75%" text="He leído y acepto los términos y condiciones"></Label>
         <Switch class="switch" checked="false" [(ngModel)]="privacyPolicy" width="25%">                   </Switch>
       </FlexboxLayout>
-      <Button class="button-left-white borderless-button large-text" [class.disabled]="!privacyPolicy" [isEnabled]="privacyPolicy" text="GO" (tap)="submit() &amp;&amp; emailField.valid &amp;&amp; nameField.valid &amp;&amp; passwordFiel.valid &amp;&amp; confirmPasswordField.valid &amp;&amp; register()"></Button>
+      <Button class="button-left-white borderless-button large-text" [class.disabled]="!privacyPolicy" [isEnabled]="privacyPolicy" text="GO" (tap)="submit() &amp;&amp; emailField.valid &amp;&amp; nameField.valid &amp;&amp; passwordField.valid &amp;&amp; confirmPasswordField.valid &amp;&amp; register()"></Button>
     </StackLayout>
   </StackLayout>
 </ScrollView>

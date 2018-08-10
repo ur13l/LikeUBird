@@ -66,5 +66,5 @@ ScrollView.page
             FlexboxLayout
                 Label.h3.m-15.white-text(textWrap="true" width="75%" text="He leído y acepto los términos y condiciones")
                 Switch.switch(checked="false", [(ngModel)]="privacyPolicy", width="25%")                    
-            Button.button-left-white.borderless-button.large-text([class.disabled]="!privacyPolicy", [isEnabled]="privacyPolicy", text="GO", (tap)="submit() && emailField.valid && nameField.valid && passwordFiel.valid && confirmPasswordField.valid && register()")
+            Button.button-left-white.borderless-button.large-text([class.disabled]="!privacyPolicy", [isEnabled]="privacyPolicy", text="GO", (tap)="submit() && emailField.valid && nameField.valid && passwordField.valid && confirmPasswordField.valid && register()")
             
